@@ -17,7 +17,9 @@
                             <div class="row mx-2">
                                 <h5 class="col"><%# Eval("med_name") %></h5>
                                 <h5 class="col"><%# Eval("med_desc") %></h5>
-                                <h5 class="col"><%# Eval("med_quantity") %> Qty.</h5>
+
+                                <h5 class="col"><%# ((int)Eval("med_quantity") == 0) ? "Out of Stock" : Eval("med_quantity") + " Qty." %></h5>
+
                                 <asp:HyperLink ID="lnkViewMed" Text="View" runat="server" NavigateUrl='<%# Eval("id", "/viewMedicine.aspx?medId={0}") %>'></asp:HyperLink>
                             </div>
                         
@@ -30,6 +32,6 @@
             </Columns>
         
         </asp:GridView>
-        </div>
+    </div>
 
 </asp:Content>

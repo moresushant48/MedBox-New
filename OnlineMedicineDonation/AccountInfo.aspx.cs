@@ -66,7 +66,36 @@ namespace OnlineMedicineDonation
                 cmd = new SqlCommand(updatePass, con);
 
                 if (cmd.ExecuteNonQuery() == 1) {
+                    Response.Redirect("/AccountInfo");
                     lblResult.Text = "Password Changed Successfully.";
+                }
+
+            }
+        }
+
+        protected void btnChangeAddress_Click(object sender, EventArgs e)
+        {
+            viewAddressInput.Visible = true;
+        }
+
+        protected void btnSubmitNewAddress_Click(object sender, EventArgs e)
+        {
+            if (txtNewAddress.Text.Trim() != "")
+            {
+
+                SqlConnection con;
+                SqlCommand cmd;
+                SqlDataReader dataReader;
+
+                con = new SqlConnection(login.conString);
+                con.Open();
+                String updateAddress = "UPDATE users SET address = '" + txtNewAddress.Text.Trim() + "' WHERE id = '" + Session["userId"].ToString() + "'";
+                cmd = new SqlCommand(updateAddress, con);
+
+                if (cmd.ExecuteNonQuery() == 1)
+                {
+                    Response.Redirect("/AccountInfo");
+                    lblResult.Text = "Address Changed Successfully.";
                 }
 
             }

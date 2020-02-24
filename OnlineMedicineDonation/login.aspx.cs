@@ -29,11 +29,13 @@ namespace OnlineMedicineDonation
             con.Open();
             SqlDataReader reader = cmd.ExecuteReader();
 
-            if (reader.Read()) {
+            if (reader.Read())
+            {
                 result.Text = "Logged In Successfully.";
-                
+
                 Session["loggedIn"] = "true";
                 Session["userId"] = reader.GetInt32(0);
+                Session["userEmail"] = reader.GetString(2);
 
                 if (Request["orderId"] != null)
                 {
@@ -43,6 +45,9 @@ namespace OnlineMedicineDonation
                 {
                     Response.Redirect("/Default.aspx");
                 }
+            }
+            else {
+                result.Text = "Wrong credentials.";
             }
 
             reader.Close();

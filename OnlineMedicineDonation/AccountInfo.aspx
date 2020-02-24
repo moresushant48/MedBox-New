@@ -18,12 +18,21 @@
         <br />
         
         <br />
-        <asp:Button ID="btnChangePassword" runat="server" Text="Change Password" OnClick="btnChangePassword_Click" CssClass="btn btn-primary" />
+        <asp:Button ID="btnChangeAddress" runat="server" Text="Change Address" CssClass="btn btn-primary w-100" OnClick="btnChangeAddress_Click" />
+        <br /><br />
+        <asp:Button ID="btnChangePassword" runat="server" Text="Change Password" OnClick="btnChangePassword_Click" CssClass="btn btn-primary w-100" />
 
         <br />
         <br />
         <div class="text-center">
             <asp:Label ID="lblResult" runat="server" CssClass="text-center"></asp:Label>
+        </div>
+        <div id="viewAddressInput" runat="server" visible="false">
+            
+            <asp:TextBox ID="txtNewAddress" runat="server" CssClass="form-control mb-4" TextMode="MultiLine" placeholder="Enter new Address"></asp:TextBox>
+
+            <asp:Button ID="btnSubmitNewAddress" runat="server" Text="Submit" CssClass="btn btn-primary" OnClick="btnSubmitNewAddress_Click"/>
+            
         </div>
         <div id="viewPasswordInput" runat="server" visible="false">
             

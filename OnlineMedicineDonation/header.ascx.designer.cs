@@ -58,6 +58,24 @@ namespace OnlineMedicineDonation {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl liGetMedicines;
         
         /// <summary>
+        /// liMyMedicines control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liMyMedicines;
+        
+        /// <summary>
+        /// liDonations control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liDonations;
+        
+        /// <summary>
         /// liAdminPanel control.
         /// </summary>
         /// <remarks>
@@ -83,5 +101,14 @@ namespace OnlineMedicineDonation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnLogout;
+        
+        /// <summary>
+        /// liUserEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liUserEmail;
     }
 }

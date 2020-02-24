@@ -25,6 +25,10 @@ namespace OnlineMedicineDonation
                 btnLogout.Visible = true;
                 liMyAccount.Visible = true;
                 liAddMedicine.Visible = true;
+                liDonations.Visible = true;
+                liMyMedicines.Visible = true;
+                liUserEmail.Visible = true;
+                
 
                 /*
                  Admin Navigation
@@ -34,6 +38,10 @@ namespace OnlineMedicineDonation
                     liAdminPanel.Visible = true;
                 }
 
+                /*
+                    Fetch username and set into liUserName. 
+                */
+                liUserEmail.InnerText = Session["userEmail"].ToString();
             }
             else {
                 /*
@@ -47,6 +55,9 @@ namespace OnlineMedicineDonation
                 liMyAccount.Visible = false;
                 liAddMedicine.Visible = false;
                 liAdminPanel.Visible = false;
+                liDonations.Visible = false;
+                liMyMedicines.Visible = false;
+                liUserEmail.Visible = false;
             }
 
         }

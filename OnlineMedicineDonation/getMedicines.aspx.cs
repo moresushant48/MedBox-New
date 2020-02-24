@@ -19,7 +19,7 @@ namespace OnlineMedicineDonation
             using (SqlConnection con = new SqlConnection(login.conString)) {
 
                 con.Open();
-                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT * FROM meds", con);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT * FROM meds WHERE status = 'APPROVED'", con);
 
                 DataTable dataTable = new DataTable();
                 sqlDataAdapter.Fill(dataTable);

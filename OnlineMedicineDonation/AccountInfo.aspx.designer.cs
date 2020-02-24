@@ -67,6 +67,15 @@ namespace OnlineMedicineDonation {
         protected global::System.Web.UI.WebControls.Label userAddress;
         
         /// <summary>
+        /// btnChangeAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnChangeAddress;
+        
+        /// <summary>
         /// btnChangePassword control.
         /// </summary>
         /// <remarks>
@@ -83,6 +92,33 @@ namespace OnlineMedicineDonation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblResult;
+        
+        /// <summary>
+        /// viewAddressInput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl viewAddressInput;
+        
+        /// <summary>
+        /// txtNewAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtNewAddress;
+        
+        /// <summary>
+        /// btnSubmitNewAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubmitNewAddress;
         
         /// <summary>
         /// viewPasswordInput control.

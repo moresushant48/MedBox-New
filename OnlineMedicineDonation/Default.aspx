@@ -30,6 +30,36 @@
     <div class="bg-light row d-flex justify-content-center vh-100">
         <div class="m-auto text-center">
 
+            <h1 class="h1">Help</h1>
+            <hr class="m-4" />
+            <p class="h4 lead " style="line-height:40px">
+                Help the world by donating to charities and funds that help world become a better place to live. <br /><br />
+
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                <asp:Timer ID="Timer1" runat="server" Interval="1500"></asp:Timer>
+
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <Triggers>
+
+                        <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
+
+                    </Triggers>
+                    <ContentTemplate>
+
+                        <asp:AdRotator ID="AdRotator1" runat="server" CssClass="my-auto"
+                            AdvertisementFile="~/Ads.xml" Height="500px" Target="_blank"/>
+
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+
+            </p>
+        </div>        
+    </div>
+
+
+    <div class="bg-light row d-flex justify-content-center vh-100">
+        <div class="m-auto text-center">
+
             <h1 class="h1">About</h1>
             <hr class="m-4" />
             <p class="h4 lead " style="line-height:40px">
