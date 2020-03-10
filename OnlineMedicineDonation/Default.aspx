@@ -36,7 +36,7 @@
                 Help the world by donating to charities and funds that help world become a better place to live. <br /><br />
 
                 <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-                <asp:Timer ID="Timer1" runat="server" Interval="1500"></asp:Timer>
+                <asp:Timer ID="Timer1" runat="server" Interval="3000"></asp:Timer>
 
                 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                     <Triggers>

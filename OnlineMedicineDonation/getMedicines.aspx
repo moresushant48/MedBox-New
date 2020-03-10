@@ -20,7 +20,8 @@
 
                                 <h5 class="col"><%# ((int)Eval("med_quantity") == 0) ? "Out of Stock" : Eval("med_quantity") + " Qty." %></h5>
 
-                                <asp:HyperLink ID="lnkViewMed" Text="View" runat="server" NavigateUrl='<%# Eval("id", "/viewMedicine.aspx?medId={0}") %>'></asp:HyperLink>
+                                <asp:HyperLink ID="lnkUserProfile" Text="User" runat="server" Target="_blank" NavigateUrl='<%# Eval("user_id", "/ViewUser.aspx?userId={0}") %>'></asp:HyperLink>
+                                <asp:HyperLink ID="lnkViewMed" Text="View" runat="server" CssClass="ml-3" NavigateUrl='<%# Eval("id", "/viewMedicine.aspx?medId={0}") %>'></asp:HyperLink>
                             </div>
                         
                         </div>
