@@ -2,7 +2,7 @@
 
 <header class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
 
-    <p class="navbar-brand m-auto">MedBox</p>
+    <p class="navbar-brand m-auto">Online Medicine Donation</p>
     <!-- Collapse button -->
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
 		aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
